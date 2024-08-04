@@ -30,7 +30,6 @@ section {
   border-color: rgba(10, 25, 47, 1);
   border-radius: 10px;
   padding: 50px;
-  border:2px solid blue;
   width: 1000px;
   box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.1), 0 6px 20px rgba(69, 123, 157, 0.4);
 }
@@ -40,11 +39,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
-  border: 5px solid palegreen;
 }
 
 .container {
-  border: 2px solid gold;
   display: flex;
   height: 220px;
   justify-content: flex-start;
@@ -59,12 +56,17 @@ section {
   border-radius: 50%;
   box-shadow: inset 45px 0px 2px #FFE67EEF;
   margin-right: -100px;
+  animation-name: moon-animation;
+  animation-timing-function: easeOutQuad;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  cursor: pointer;
+
 
 }
 
 .hack {
   display: flex;
-  border:2px solid red;
   margin-left: 120px;
   align-content: center;
   text-align: center;
@@ -80,9 +82,21 @@ section {
   rotate: 315deg;
   margin-inline-start: -30px;
   margin-inline-end: -40px;
-  margin-top: 40px
+  margin-top: 40px;
+  animation-name: rocket-animation;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  cursor:pointer;
+  animation-fill-mode: both;
+  animation-delay: 2s;
 }
 
 .astro-guy {
-
+  animation-name: astro-animation;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+  animation-iteration-count:infinite;
+  cursor: pointer;
 }
