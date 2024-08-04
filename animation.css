@@ -1,0 +1,25 @@
+@keyframes moon-animation {
+    50% {
+       width: 250px;
+       height: 100x;
+
+    }
+}
+
+
+@keyframes rocket-animation {
+    50% {
+        rotate: 315deg;
+        transform: translate(10%, -10%);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        animation-delay: 3s;
+    }
+}
+
+@keyframes astro-animation {
+    50% {
+        transform: translate(0, -10%);
+        rotate: 20deg;
+    }
+}
